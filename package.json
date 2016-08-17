@@ -18,7 +18,7 @@
     "express": "^4.13.4",
     "install": "^0.8.1",
     "lodash": "^4.14.1",
-    "meditek_react_components": "^0.3.10",
+    "meditek_react_components": "^0.3.12",
     "mysql": "^2.10.2",
     "npm": "^3.10.5",
     "paginator": "^1.0.0",
