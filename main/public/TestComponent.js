@@ -129,7 +129,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                null,
+	                { style: { marginLeft: "50px" } },
 	                _react2.default.createElement(
 	                    'h2',
 	                    null,
@@ -143,6 +143,46 @@
 	                        'a',
 	                        { href: 'https://github.com/tannvdts/meditek_react_components', target: '_blank' },
 	                        'https://github.com/tannvdts/meditek_react_components'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'h4',
+	                    null,
+	                    'Source Demo: ',
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/tannvdts/meditek_react_components_examples', target: '_blank' },
+	                        'https://github.com/tannvdts/meditek_react_components_examples'
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Install: npm install meditek_react_component --save '
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        "Install dependency:",
+	                        _react2.default.createElement('br', null),
+	                        " npm install react-checkbox-group --save",
+	                        _react2.default.createElement('br', null),
+	                        " npm install pagination --save",
+	                        _react2.default.createElement('br', null),
+	                        " npm install react-js-pagination --save",
+	                        _react2.default.createElement('br', null),
+	                        " npm install react-radio-group --save",
+	                        _react2.default.createElement('br', null),
+	                        _react2.default.createElement('br', null),
+	                        "bootstrap 3: http://getbootstrap.com/",
+	                        _react2.default.createElement('br', null),
+	                        "bootrap-datepicker: https://bootstrap-datepicker.readthedocs.io/en/latest/",
+	                        _react2.default.createElement('br', null),
+	                        "bootstrap-timepicker: https://jdewit.github.io/bootstrap-timepicker/",
+	                        _react2.default.createElement('br', null)
 	                    )
 	                ),
 	                _react2.default.createElement('hr', null),
