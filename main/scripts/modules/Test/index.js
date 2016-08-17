@@ -28,6 +28,11 @@ class Test extends Component{
     render() {
         return (
             <div>
+                <h2>Demo meditek_react_components</h2>
+                <h4>Document: <a href="https://github.com/tannvdts/meditek_react_components" target="_blank">https://github.com/tannvdts/meditek_react_components</a></h4>
+                <hr/>
+                <hr/>
+
                 {"Test Checkbox:"}
                 <br/>
                 <TestCheckbox/>

@@ -130,6 +130,23 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
+	                _react2.default.createElement(
+	                    'h2',
+	                    null,
+	                    'Demo meditek_react_components'
+	                ),
+	                _react2.default.createElement(
+	                    'h4',
+	                    null,
+	                    'Document: ',
+	                    _react2.default.createElement(
+	                        'a',
+	                        { href: 'https://github.com/tannvdts/meditek_react_components', target: '_blank' },
+	                        'https://github.com/tannvdts/meditek_react_components'
+	                    )
+	                ),
+	                _react2.default.createElement('hr', null),
+	                _react2.default.createElement('hr', null),
 	                "Test Checkbox:",
 	                _react2.default.createElement('br', null),
 	                _react2.default.createElement(_TestCheckbox2.default, null),
