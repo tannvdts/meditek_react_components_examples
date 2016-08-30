@@ -22442,11 +22442,27 @@
 	      }
 	      var optionElements = [];
 	      optionElements = options.map(function (item, index) {
-	        return _react2['default'].createElement(
-	          'option',
-	          { key: index, value: item.value },
-	          item.name
-	        );
+	        if (item.type == "optgroup") {
+	          var group = _react2['default'].createElement(
+	            'optgroup',
+	            { key: index, label: item.name },
+	            item.items.map(function (subitem, subindex) {
+	              return _react2['default'].createElement(
+	                'option',
+	                { key: index + "." + subindex, value: subitem.value },
+	                subitem.name
+	              );
+	            })
+	          );
+	
+	          return group;
+	        } else {
+	          return _react2['default'].createElement(
+	            'option',
+	            { key: index, value: item.value },
+	            item.name
+	          );
+	        }
 	      });
 	      return _react2['default'].createElement(
 	        'select',
@@ -23462,7 +23478,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var options = [{ name: 'item 1', value: 1 }, { name: 'item 2', value: 2 }, { name: 'item 3', value: 3 }, { name: 'item 4', value: 4 }];
+	      var options = [{ type: 'optgroup', name: 'group test', items: [{ type: 'option', name: 'item test 1', value: 11 }, { type: 'option', name: 'item test 2', value: 22 }] }, { type: 'option', name: 'item 1', value: 1 }, { type: 'option', name: 'item 2', value: 2 }, { type: 'option', name: 'item 3', value: 3 }, { type: 'option', name: 'item 4', value: 4 }];
 	      return _react2.default.createElement(
 	        _meditek_react_components.Select,
 	        { id: 1234,
